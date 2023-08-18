@@ -8,7 +8,3 @@ class HomeView(TemplateView):
     # model = Home
     template_name = "pages/home.html"
 
-
-class AboutView(TemplateView):
-    # model = Home
-    template_name = "pages/about.html"

@@ -354,24 +354,30 @@
                          <p>
                             Advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket.
                          </p>
+                         
                          <ul>
-                             <li>
-                                 <div class="icon">
-                                     <i class="fas fa-phone"></i>
+                           <li>
+                             <div class="icon">
+                               <i class="fas fa-phone"></i>
+                              </div>
+                              <div class="info">
+                                <h4>Phone</h4>
+                                {% for i in contact %}
+                                     <span>{{ i.phone }}</span>
+                                {% endfor %}
                                  </div>
-                                 <div class="info">
-                                     <h4>Phone</h4>
-                                     <span>+123 456 7890</span>
-                                 </div>
+
                              </li>
                              <li>
                                  <div class="icon">
                                      <i class="fas fa-envelope-open"></i>
                                  </div>
                                  <div class="info">
-                                     <h4>Eamil</h4>
-                                     <span>support@restcafe.com</span>
-                                 </div>
+                                     <h4>Email</h4>
+                                {% for i in contact %}
+                                     <span>{{ i.email }}</span>
+                                {% endfor %}
+                                 </div> 
                              </li>
                          </ul>
                      </div>
