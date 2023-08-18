@@ -1,0 +1,1215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== Page Title ========== -->
+    <title>Rescaf</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/flaticon-set.css' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootsnav.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+
+</head>
+<body>
+
+    {% comment %} {% include 'layouts/header.html' %}
+    {% block home %}{% endblock home %}
+    {% block about %}{% endblock about %}
+    {% include 'layouts/footer.html' %} {% endcomment %}
+    
+
+     <!-- Preloader Start -->
+     <div class="se-pre-con"></div>
+     <!-- Preloader Ends -->
+ 
+     <!-- Header 
+     ============================================= -->
+     <header id="home">
+ 
+         <!-- Start Navigation -->
+         <nav class="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav shadow-less">
+ 
+             <div class="container">
+ 
+                 <!-- Start Atribute Navigation -->
+                 <div class="attr-nav">
+                     <ul>
+                         <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                     </ul>
+                 </div>        
+                 <!-- End Atribute Navigation -->
+ 
+                 <!-- Start Header Navigation -->
+                 <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                         <i class="fa fa-bars"></i>
+                     </button>
+                     <a class="navbar-brand" href="index.html">
+                         <img src="{% static 'images/logo-light.png' %}" class="logo logo-display" alt="Logo">
+                         <img src="{% static 'images/logo.png' %}" class="logo logo-scrolled" alt="Logo">
+                     </a>
+                 </div>
+                 <!-- End Header Navigation -->
+ 
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                 <div class="collapse navbar-collapse" id="navbar-menu">
+                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="index.html">Home Version One</a></li>
+                                 <li><a href="index-2.html">Home Version Two</a></li>
+                                 <li><a href="index-3.html">Home Version Three</a></li>
+                                 <li><a href="index-4.html">Home Version Four</a></li>
+                                 <li><a href="index-5.html">Home Version Five</a></li>
+                                 <li><a href="index-6.html">Home Version Six</a></li>
+                                 <li><a href="index-op.html">Onepaeg Version One</a></li>
+                                 <li><a href="index-op-2.html">Onepaeg Version Two</a></li>
+                                 <li><a href="index-op-3.html">Onepaeg Version Three</a></li>
+                                 <li><a href="index-op-4.html">Onepaeg Version Four</a></li>
+                             </ul>
+                         </li>
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                             <ul class="dropdown-menu">
+                                 <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a href="about.html">Version One</a></li>
+                                         <li><a href="about-2.html">Version Two</a></li>
+                                     </ul>
+                                 </li>
+                                 <li><a href="chef.html">Chef</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                                 <li><a href="404.html">Error Page</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="reservation.html">Reservation</a></li>
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Menus</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="menu-1.html">Version One</a></li>
+                                 <li><a href="menu-2.html">Version Two</a></li>
+                                 <li><a href="menu-3.html">Version Three</a></li>
+                                 <li><a href="menu-4.html">Version Four</a></li>
+                             </ul>
+                         </li>  
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Gallery</a>
+                             <ul class="dropdown-menu">
+                                 <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Grid Colum</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a href="gallery-grid-2-colum.html">Gallery Two Colum</a></li>
+                                         <li><a href="gallery-grid-3-colum.html">Gallery Three Colum</a></li>
+                                         <li><a href="gallery-grid-4-colum.html">Gallery Four Colum</a></li>
+                                     </ul>
+                                 </li>
+                                 <li class="dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masonary Colum</a>
+                                     <ul class="dropdown-menu">
+                                         <li><a href="gallery-masonary-2-colum.html">Gallery Two Colum</a></li>
+                                         <li><a href="gallery-masonary-3-colum.html">Gallery Three Colum</a></li>
+                                         <li><a href="gallery-masonary-4-colum.html">Gallery Four Colum</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </li>
+                         <li class="dropdown">
+                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="blog-standard.html">Blog Standard</a></li>
+                                 <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                 <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                 <li><a href="blog-single.html">Blog Single Standard</a></li>
+                                 <li><a href="blog-single-left-sidebar.html">Single Left Sidebar</a></li>
+                                 <li><a href="blog-single-right-sidebar.html">Single Right Sidebar</a></li>
+                             </ul>
+                         </li>
+                         <li>
+                             <a href="contact.html">contact</a>
+                         </li>
+                     </ul>
+                 </div><!-- /.navbar-collapse -->
+             </div>
+ 
+             <!-- Start Side Menu -->
+             <div class="side">
+                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                 <div class="widget">
+                     <h4 class="title">About Us</h4>
+                     <p>
+                         Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
+                     </p>
+                 </div>
+                 <div class="widget opening-hours">
+                     <h4 class="title">Openig Hours</h4>
+                     <ul>
+                         <li> 
+                             <span> Mon - Tues :  </span>
+                             <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                         </li>
+                         <li> 
+                             <span> Wednes - Thurs :</span>
+                             <div class="pull-right"> 8.00 am - 6.00 pm </div>
+                         </li>
+                         <li> 
+                             <span> Launch :</span>
+                             <div class="pull-right"> Everyday </div>
+                         </li>
+                         <li> 
+                             <span> Sun : </span>
+                             <div class="pull-right closed"> Closed </div>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="widget">
+                     <h4 class="title">Our Menus</h4>
+                     <ul>
+                         <li><a href="#">Chees croissants</a></li>
+                         <li><a href="#">Bruschetti</a></li>
+                         <li><a href="#">Awesome Vegetables</a></li>
+                         <li><a href="#">Tasty Snacks</a></li>
+                         <li><a href="#">Meal for whole family</a></li>
+                     </ul>
+                 </div>
+                 <div class="widget social">
+                     <h4 class="title">Connect With Us</h4>
+                     <ul class="link">
+                         <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                         <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                         <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                         <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                     </ul>
+                 </div>
+             </div>
+             <!-- End Side Menu -->
+ 
+         </nav>
+         <!-- End Navigation -->
+ 
+     </header>
+     <!-- End Header -->
+ 
+     <!-- Start Banner 
+     ============================================= -->
+     <div class="banner-area ds-fonts text-light video-bg-live bg-fixed" style="background-image: url({% static 'images/2_1.jpg' %})">
+         <div class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=hoiGV-N-2Gs',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:5, opacity:1, quality:'default'}"></div>
+         <div id="bootcarousel" class="carousel transparent-nav slide carousel-fade animate_text" data-ride="carousel">
+             <!-- Wrapper for slides -->
+             <div class="carousel-inner shadow dark">
+                 <div class="item active">
+                     <div class="box-table">
+                         <div class="box-cell">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-md-8">
+                                         <div class="content">
+                                             <h2 data-animation="animated fadeInUp">Buffet</h2>
+                                             <h1 data-animation="animated slideInLeft">Official Packages</h1>
+                                             <div class="lists" data-animation="animated slideInUp">
+                                                 <ul>
+                                                     <li>
+                                                         <i class="flaticon-hamburger"></i> 40 Food
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-champagne-glass"></i> 19 Drinks
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-coffee-cup"></i> 28 Soup
+                                                     </li>
+                                                 </ul>
+                                             </div>
+                                             <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">Order Now</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="box-table">
+                         <div class="box-cell">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-md-8">
+                                         <div class="content">
+                                             <h2 data-animation="animated fadeInUp">Buffet</h2>
+                                             <h1 data-animation="animated slideInLeft">Student Packages</h1>
+                                             <div class="lists" data-animation="animated slideInUp">
+                                                 <ul>
+                                                     <li>
+                                                         <i class="flaticon-hamburger"></i> 40 Food
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-champagne-glass"></i> 19 Drinks
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-coffee-cup"></i> 28 Soup
+                                                     </li>
+                                                 </ul>
+                                             </div>
+                                             <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">Order Now</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="box-table">
+                         <div class="box-cell">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-md-8">
+                                         <div class="content">
+                                             <h2 data-animation="animated fadeInUp">Buffet</h2>
+                                             <h1 data-animation="animated slideInLeft">Family Packages</h1>
+                                             <div class="lists" data-animation="animated slideInUp">
+                                                 <ul>
+                                                     <li>
+                                                         <i class="flaticon-hamburger"></i> 40 Food
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-champagne-glass"></i> 19 Drinks
+                                                     </li>
+                                                     <li>
+                                                         <i class="flaticon-coffee-cup"></i> 28 Soup
+                                                     </li>
+                                                 </ul>
+                                             </div>
+                                             <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">Order Now</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- End Wrapper for slides -->
+ 
+             <!-- Left and right controls -->
+             <a class="left carousel-control" href="#bootcarousel" data-slide="prev">
+                 <i class="fa fa-angle-left"></i>
+                 <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#bootcarousel" data-slide="next">
+                 <i class="fa fa-angle-right"></i>
+                 <span class="sr-only">Next</span>
+             </a>
+         </div>
+         <!-- Shape -->
+         <div class="wavesshape">
+             <img src="images/shape.png" alt="Shape">
+         </div>
+         <!-- Shape -->
+     </div>
+     <!-- End Banner -->
+ 
+     <!-- Start About
+     ============================================= -->
+     <div class="about-area default-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="about-items">
+                     <div class="col-md-7 info">
+                         <h3>Our Story</h3>
+                         <h2>Until I discovered cooking I was never<br> really interested in anything</h2>
+                         <p>
+                             Pleased anxious or as in by viewing forbade minutes prevent. Too leave had those get being led weeks blind. Had men rose from down lady able. Its son him ferrars proceed six parlors.
+                         </p>
+                         <p>
+                            Advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket.
+                         </p>
+                         <ul>
+                             <li>
+                                 <div class="icon">
+                                     <i class="fas fa-phone"></i>
+                                 </div>
+                                 <div class="info">
+                                     <h4>Phone</h4>
+                                     <span>+123 456 7890</span>
+                                 </div>
+                             </li>
+                             <li>
+                                 <div class="icon">
+                                     <i class="fas fa-envelope-open"></i>
+                                 </div>
+                                 <div class="info">
+                                     <h4>Eamil</h4>
+                                     <span>support@restcafe.com</span>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                     <!-- Start Form -->
+                     <div class="col-md-5 form">
+                         <div class="form-box">
+                             <div class="icon">
+                                 <i class="fas fa-utensils"></i>
+                             </div>
+                             <h3>Book a table</h3>
+                             <form action="#">
+                                 <div class="row">
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                             <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                         </div>
+                                     </div>
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                             <input class="form-control" id="email" name="email" placeholder="Email" type="email">
+                                         </div>
+                                     </div>
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                             <select>
+                                                 <option value="1">1 Person</option>
+                                                 <option value="2">2 Person</option>
+                                                 <option value="4">3 Person</option>
+                                                 <option value="5">4 Person</option>
+                                             </select>
+                                         </div>
+                                     </div>
+                                     <div class="col-md-12">
+                                         <div class="form-group">
+                                             <input class="form-control" id="date" name="date" placeholder="Date" type="text">
+                                         </div>
+                                     </div>
+                                     <div class="col-md-12">
+                                         <button type="submit" name="submit" id="submit">
+                                             Book Now
+                                         </button>
+                                     </div>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+                     <!-- End Form -->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End About -->
+ 
+     <!-- Start Services
+     ============================================= -->
+     <div class="services-area item-bg bg-gray">
+         <div class="container-full">
+             <div class="row">
+                 <div class="services-items services-carousel owl-carousel owl-theme text-center text-light">
+                     <!-- Single Item -->
+                     <div class="item bg-cover" style="background-image: url({% static 'images/1_1.jpg' %})">
+                         <div class="box">
+                             <i class="flaticon-dinner-table"></i>
+                             <h4>Fine Dining</h4>
+                             <p>
+                                 Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Travelling by introduced of mr terminated.
+                             </p>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="item bg-cover" style="background-image: url({% static 'images/2_2.jpg' %})">
+                         <div class="box">
+                             <i class="flaticon-champagne-glass"></i>
+                             <h4>Party and Event</h4>
+                             <p>
+                                 Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Travelling by introduced of mr terminated.
+                             </p>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="item bg-cover" style="background-image: url({% static 'images/3.jpg' %})">
+                         <div class="box">
+                             <i class="flaticon-buffet"></i>
+                             <h4>Buffet</h4>
+                             <p>
+                                 Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Travelling by introduced of mr terminated.
+                             </p>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="item bg-cover" style="background-image: url({% static 'images/4.jpg' %})">
+                         <div class="box">
+                             <i class="flaticon-moving-truck"></i>
+                             <h4>Home Delivery</h4>
+                             <p>
+                                 Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Travelling by introduced of mr terminated.
+                             </p>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Services -->
+ 
+     <!-- Start Food Menu
+     ============================================= -->
+     <div class="food-menu-area inc-isotop default-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                     <div class="site-heading text-center">
+                         <h3>Discorver</h3>
+                         <h2>Our Menu</h2>
+                         <p>
+                             While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="food-menu-area text-center">
+                 <div class="row">
+                     <div class="col-md-12 food-menu-content">
+                         <div class="mix-item-menu text-center">
+                             <button class="active" data-filter="*">All</button>
+                             <button data-filter=".pancakes">Pancakes</button>
+                             <button data-filter=".sandwiches">Sandwiches</button>
+                             <button data-filter=".brunch">Brunch</button>
+                             <button data-filter=".vegetarian">Vegetarian</button>
+                             <button data-filter=".meat">Meat</button>
+                         </div>
+                         <!-- End Mixitup Nav-->
+ 
+                         <div class="row text-center masonary">
+                             <div id="portfolio-grid" class="menu-lists text-center col-3">
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item pancakes meat">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/1_3.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$5.90</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Crispy Crust Pizzeria</a></h4>
+                                             <span>Mutton / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End Single Item -->
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item sandwiches vegetarian">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/2_3.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$18.10</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Luger Burger</a></h4>
+                                             <span>Beef / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End Single Item -->
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item sandwiches brunch">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/3_1.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$6.00</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Fries McDonald's</a></h4>
+                                             <span>Chicken / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End Single Item -->
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item brunch">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/5.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$11.50</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Chicken Popeyes</a></h4>
+                                             <span>Mutton / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End Single Item -->
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item meat pancakes">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/4_1.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$25.00</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Chicken Sandwich</a></h4>
+                                             <span>Chicken / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- End Single Item -->
+                                 <!-- Single Item -->
+                                 <div class="item-single pf-item sandwiches vegetarian">
+                                     <div class="item">
+                                         <div class="thumb">
+                                             <a href="#">
+                                                 <img src="{% static 'images/6.jpg' %}" alt="Thumb">
+                                             </a>
+                                             <div class="price">
+                                                 <h5>$9.10</h5>
+                                             </div>
+                                         </div>
+                                         <div class="info">
+                                             <h4><a href="#">Salmon Steak</a></h4>
+                                             <span>Beef / Olive Oil / Salt</span>
+                                             <p>
+                                                 Considered introduced themselves mr to discretion at. Means among saw hopes for. Death mirth in oh learn he equal on.
+                                             </p>
+                                             <div class="button">
+                                                 <a href="#">Order Now</a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <!-- Single Item -->
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Food Menu -->
+ 
+     <!-- Start Offer
+     ============================================= -->
+     <div class="offer-area">
+         <div class="container-full">
+             <div class="row">
+                 <div class="offer-items offer-carousel owl-carousel owl-theme">
+                     <!-- Single Item -->
+                     <div class="item">
+                         <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'images/1.jpg' %});">
+                             <div class="price">
+                                 <h4>Price <span>$63</span></h4>
+                             </div>
+                         </div>
+                         <div class="col-md-6 info">
+                             <h3>Special Offer</h3>
+                             <h2>Famirly Party</h2>
+                             <span>Fried Chicken / Gordita Crunch / Pizza / Burger</span>
+                             <p>
+                                 Frankness applauded by supported ye household. Collected favourite now for for and rapturous repulsive consulted. An seems green be wrote again. She add what own only like. Tolerably we as extremity exquisite do commanded. Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies. Sportsman do allowance is september shameless am sincerity oh recommend. Gate tell man day that who. 
+                             </p>
+                             <a class="btn btn-dark border btn-md" href="#">Book a table</a>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="item">
+                         <div class="col-md-6 thumb bg-cover" style="background-image: url({% static 'images/2.jpg' %});">
+                             <div class="price">
+                                 <h4>Price <span>$78</span></h4>
+                             </div>
+                         </div>
+                         <div class="col-md-6 info">
+                             <h3>Special Offer</h3>
+                             <h2>Birthday Party</h2>
+                             <span>Fried Chicken / Gordita Crunch / Pizza / Burger</span>
+                             <p>
+                                 Frankness applauded by supported ye household. Collected favourite now for for and rapturous repulsive consulted. An seems green be wrote again. She add what own only like. Tolerably we as extremity exquisite do commanded. Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies. Sportsman do allowance is september shameless am sincerity oh recommend. Gate tell man day that who. 
+                             </p>
+                             <a class="btn btn-dark border btn-md" href="#">Book a table</a>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Offer -->
+ 
+     <!-- Start Chef Area 
+     ============================================= -->
+     <div class="chef-area default-padding bottom-less">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                     <div class="site-heading text-center">
+                         <h3>Chefs</h3>
+                         <h2>Meet our experts</h2>
+                         <p>
+                             While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="chef-items">
+                     <!-- Single Item -->
+                     <div class="col-md-4 single-item">
+                         <div class="item">
+                             <div class="thumb">
+                                 <img src="{% static 'images/1_2.jpg' %}" alt="Thumb">
+                             </div>
+                             <div class="info">
+                                 <div class="overlay">
+                                     <h4>Jessica Jones</h4>
+                                     <span>chef</span>
+                                 </div>
+                                 <div class="content">
+                                     <p>
+                                         Explain ten man uncivil engaged conduct. Am likewise betrayed as declared absolute do.
+                                     </p>
+                                     <ul>
+                                         <li class="facebook">
+                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                         </li>
+                                         <li class="twitter">
+                                             <a href="#"><i class="fab fa-twitter"></i></a>
+                                         </li>
+                                         <li class="pinterest">
+                                             <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                         </li>
+                                         <li class="linkedin">
+                                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="col-md-4 single-item">
+                         <div class="item">
+                             <div class="thumb">
+                                 <img src="{% static 'images/2_4.jpg' %}" alt="Thumb">
+                             </div>
+                             <div class="info">
+                                 <div class="overlay">
+                                     <h4>Ahel Natasha</h4>
+                                     <span>Patissier</span>
+                                 </div>
+                                 <div class="content">
+                                     <p>
+                                         Explain ten man uncivil engaged conduct. Am likewise betrayed as declared absolute do.
+                                     </p>
+                                     <ul>
+                                         <li class="facebook">
+                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                         </li>
+                                         <li class="twitter">
+                                             <a href="#"><i class="fab fa-twitter"></i></a>
+                                         </li>
+                                         <li class="pinterest">
+                                             <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                         </li>
+                                         <li class="linkedin">
+                                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                     <!-- Single Item -->
+                     <div class="col-md-4 single-item">
+                         <div class="item">
+                             <div class="thumb">
+                                 <img src="{% static 'images/3_2.jpg' %}" alt="Thumb">
+                             </div>
+                             <div class="info">
+                                 <div class="overlay">
+                                     <h4>Gabriela Beckett</h4>
+                                     <span>cook</span>
+                                 </div>
+                                 <div class="content">
+                                     <p>
+                                         Explain ten man uncivil engaged conduct. Am likewise betrayed as declared absolute do.
+                                     </p>
+                                     <ul>
+                                         <li class="facebook">
+                                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                         </li>
+                                         <li class="twitter">
+                                             <a href="#"><i class="fab fa-twitter"></i></a>
+                                         </li>
+                                         <li class="pinterest">
+                                             <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                         </li>
+                                         <li class="linkedin">
+                                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Chef Area -->
+ 
+     <!-- Start Testimonials 
+     ============================================= -->
+     <div class="testimonials-area bg-gray carousel-shadow default-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                     <div class="site-heading text-center">
+                         <h3>Reviews</h3>
+                         <h2>Testimonials</h2>
+                         <p>
+                             While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="testimonial-items testimonials-carousel owl-carousel owl-theme text-center">
+                         <!-- Single Item -->
+                         <div class="item">
+                             <h4>Delicious Burger</h4>
+                             <p>
+                                 Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel. 
+                             </p>
+                             <div class="thumb">
+                                 <img src="{% static 'images/6_2.jpg' %}" alt="Thumb">
+                                 <i class="fas fa-quote-left"></i>
+                             </div>
+                             <div class="clients-info">
+                                 <h5>Ahel John</h5>
+                                 <div class="rating">
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- End Single Item -->
+                         <!-- Single Item -->
+                         <div class="item">
+                             <h4>Awesome pizza</h4>
+                             <p>
+                                 Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel. 
+                             </p>
+                             <div class="thumb">
+                                 <img src="{% static 'images/7.jpg' %}" alt="Thumb">
+                                 <i class="fas fa-quote-left"></i>
+                             </div>
+                             <div class="clients-info">
+                                 <h5>Michel Athem</h5>
+                                 <div class="rating">
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star-half-alt"></i>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- End Single Item -->
+                         <!-- Single Item -->
+                         <div class="item">
+                             <h4>Delicious Burger</h4>
+                             <p>
+                                 Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel. 
+                             </p>
+                             <div class="thumb">
+                                 <img src="{% static 'images/8.jpg' %}" alt="Thumb">
+                                 <i class="fas fa-quote-left"></i>
+                             </div>
+                             <div class="clients-info">
+                                 <h5>Ahel John</h5>
+                                 <div class="rating">
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                     <i class="fas fa-star"></i>
+                                 </div>
+                             </div>
+                         </div>
+                         <!-- End Single Item -->
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Testimonials -->
+ 
+     <!-- Start Blog 
+     ============================================= -->
+     <div class="blog-area default-padding">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-8 col-md-offset-2">
+                     <div class="site-heading text-center">
+                         <h3>Blog</h3>
+                         <h2>Latest News</h2>
+                         <p>
+                             While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="blog-items">
+                     <!-- Left Blog -->
+                     <div class="col-md-6 default">
+                         <div class="single-item">
+                             <div class="thumb">
+                                 <a href="blog-single-right-sidebar.html">
+                                     <img src="{% static 'images/1_4.jpg' %}" alt="Thumb">
+                                 </a>
+                                 <div class="meta">
+                                     <div class="tags">
+                                         <a href="#">Burget</a>
+                                         <a href="#">Pizza</a>
+                                     </div>
+                                     <ul>
+                                         <li>
+                                             <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                         </li>
+                                         <li>
+                                             <a href="#"><i class="fas fa-calendar-alt"></i> 24 Aug, 2019</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </div>
+                             <div class="info">
+                                 <h3>
+                                     <a href="blog-single-right-sidebar.html">Possession so comparison inquietude he conviction </a>
+                                 </h3>
+                                 <p>
+                                     Arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. Astonished set expression solicitude way admiration. 
+                                 </p>
+                                 <a class="btn circle btn-theme border btn-md" href="blog-single-right-sidebar.html">Read More</a>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- End Left Blog -->
+ 
+                     <!-- Right Blog -->
+                     <div class="col-md-6 flex">
+                         <!-- Single Item -->
+                         <div class="single-item flex">
+                             <div class="thumb">
+                                 <a href="blog-single-right-sidebar.html">
+                                     <img src="{% static 'images/2_6.jpg' %}" alt="Thumb">
+                                 </a>
+                             </div>
+                             <div class="info">
+                                 <div class="meta">
+                                     <ul>
+                                         <li>
+                                             <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                         </li>
+                                         <li>
+                                             <a href="#"><i class="fas fa-calendar-alt"></i> 24 Apr, 2019</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                                 <h4>
+                                     <a href="blog-single-right-sidebar.html">stimulated cultivated projection possession</a>
+                                 </h4>
+                                 <p>
+                                     Arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of.
+                                 </p>
+                             </div>
+                         </div>
+                         <!-- End Single Item -->
+                         <!-- Single Item -->
+                         <div class="single-item flex">
+                             <div class="thumb">
+                                 <a href="blog-single-right-sidebar.html">
+                                     <img src="{% static 'images/3_3.jpg' %}" alt="Thumb">
+                                 </a>
+                             </div>
+                             <div class="info">
+                                 <div class="meta">
+                                     <ul>
+                                         <li>
+                                             <a href="#"><i class="fas fa-user"></i> Admin</a>
+                                         </li>
+                                         <li>
+                                             <a href="#"><i class="fas fa-calendar-alt"></i> 24 Apr, 2019</a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                                 <h4>
+                                     <a href="blog-single-right-sidebar.html">Difficulty on insensible reasonable in</a>
+                                 </h4>
+                                 <p>
+                                     Arranging furnished knowledge agreeable so. Fanny as smile up small. It vulgar chatty simple months turned oh at change of. 
+                                 </p>
+                             </div>
+                         </div>
+                         <!-- End Single Item -->
+                     </div>
+                     <!-- End Right Blog -->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- End Blog -->
+ 
+     <!-- Start Footer 
+     ============================================= -->
+     <footer class="bg-dark">
+         <div class="container">
+             <div class="row">
+ 
+                 <div class="f-items col-4 title-effect text-light default-padding">
+ 
+                     <!-- Single Item -->
+                     <div class="col-md-3 col-sm-6  equal-height item">
+                         <div class="f-item address">
+                             <img src="{% static 'images/logo-light.png' %}" alt="Logo">
+                             <p>
+                                 20, floor, Queenslad Victoria Building. 60 california street california USA
+                             </p>
+                             <ul>
+                                 <li>
+                                     <span>Phone: </span> +123 456 7890
+                                 </li>
+                                 <li>
+                                     <span>Email: </span> <a href="mailto:support@validtheme.com">support@validtheme.com</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+ 
+                     <!-- Single Item -->
+                     <div class="col-md-3 col-sm-6  equal-height item">
+                         <div class="f-item link">
+                             <h4>Food Menu</h4>
+                             <ul>
+                                 <li>
+                                     <a href="#">Chees croissants</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Bruschetti</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Awesome Vegetables</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Tasty Snacks</a>
+                                 </li>
+                                 <li>
+                                     <a href="#">Meal for whole family</a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+ 
+                     <!-- Single Item -->
+                     <div class="col-md-3 col-sm-6  equal-height item">
+                         <div class="f-item inst-feed">
+                             <h4>Instagram Feed</h4>
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/1_5.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/2_5.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/6_1.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/4_2.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/3_4.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="{% static 'images/5_1.jpg' %}" alt="thumb">
+                                     </a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+ 
+                     <!-- Single Item -->
+                     <div class="col-md-3 col-sm-6 equal-height item">
+                         <div class="f-item opening-hours">
+                             <h4>Opening Hours</h4>
+                             <ul>
+                                 <li> 
+                                     <span> Mon - Tues :  </span>
+                                     <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                 </li>
+                                 <li> 
+                                     <span> Wednes - Thurs :</span>
+                                     <div class="pull-right"> 8.00 am - 6.00 pm </div>
+                                 </li>
+                                 <li> 
+                                     <span> Launch :</span>
+                                     <div class="pull-right"> Everyday </div>
+                                 </li>
+                                 <li> 
+                                     <span> Sun : </span>
+                                     <div class="pull-right closed"> Closed </div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <!-- End Single Item -->
+ 
+                 </div>
+             </div>
+         </div>
+         <!-- Start Footer Bottom -->
+         <div class="footer-bottom bg-dark text-light">
+             <div class="container">
+                 <div class="row">
+                     <div class="col-md-6">
+                         <p>© Copyright 2019. All Rights Reserved by <a href="#">validthemes</a></p>
+                     </div>
+                     <div class="col-md-6 text-right link">
+                         <ul>
+                             <li>
+                                 <a href="#">Terms of user</a>
+                             </li>
+                             <li>
+                                 <a href="#">License</a>
+                             </li>
+                             <li>
+                                 <a href="#">Support</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- End Footer Bottom -->
+     </footer>
+     <!-- End Footer -->
+
+
+     <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/equal-height.min.js' %}"></script>
+    <script src="{% static 'js/jquery.appear.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/count-to.js' %}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
